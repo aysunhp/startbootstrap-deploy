@@ -25,13 +25,15 @@
       h1 {
         font-size: 5.5rem;
         margin-bottom: 4px;
+        text-align: center;
       }
       h3 {
         font-size: 1.75rem;
         margin-bottom: 48px;
+        text-align: center;
       }
       button {
-        width: 180px;
+        min-width: 180px;
         height: 70px;
         padding: 20px 40px;
         background-color: #1d809f;
@@ -412,5 +414,11 @@
       flex-wrap: wrap;
       margin-bottom: 48px;
     }
+  }
+  .hero-section .hero-container h1 {
+    font-size: 3.5em;
+  }
+  .hero-section .hero-container h3 {
+    font-size: 1.5em;
   }
 }
