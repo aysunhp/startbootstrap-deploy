@@ -187,13 +187,14 @@
     justify-content: center;
     align-items: center;
     .portfolio-container {
+      width: 80%;
       flex-direction: column;
       display: flex;
       align-items: center;
       justify-content: center;
       align-content: center;
-      padding: 0px 48px;
-      margin: 0px 290px;
+      // padding: 0px 48px;
+      // margin: 0px 290px;
       h5 {
         color: #ecb807;
         font-size: 16px;
@@ -203,32 +204,35 @@
         font-size: 48px;
       }
       .projects {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 0px;
-        .col-6 {
-          width: 612px;
-          height: 410px;
-          margin: 0px;
-        }
         #project1 {
           background-image: url("./assets/images/portfolio-1.jpg");
-          background-size: contain;
+          background-size: cover;
+          background-repeat: no-repeat;
         }
         #project2 {
           background-image: url("./assets/images/portfolio-2.jpg");
-          background-size: contain;
+          background-size: cover;
+          background-repeat: no-repeat;
         }
         #project3 {
           background-image: url("./assets/images/portfolio-3.jpg");
-          background-size: contain;
+          background-size: cover;
+          background-repeat: no-repeat;
         }
         #project4 {
           background-image: url("./assets/images/bg-callout.jpg");
-          background-size: contain;
+          background-size: cover;
+          background-repeat: no-repeat;
         }
+
+        .box {
+          transition: transform 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(0.9);
+          }
+        }
+
         .content {
           margin: 250px 80px 80px 80px;
           p {
@@ -400,23 +404,13 @@
   }
 }
 
-// @media screen and (max-width: 600px) {
-//   .services-section .services-container .icons-container {
-//     width: 60%;
-//     .col-3 {
-//       width: 100%;
-//       flex-wrap: wrap;
-//       margin-bottom: 48px;
-//     }
-//   }
-// }
-// @media screen and (min-width: 600px) {
-//   .services-section .services-container .icons-container {
-//     width: 50%;
-//   }
-//   .services-section .services-container .icons-container .col-3 {
-//     width: 100%;
-//     flex-wrap: wrap;
-//     margin-bottom: 48px;
-//   }
-// }
+@media screen and (max-width: 600px) {
+  .services-section .services-container .icons-container {
+    width: 60%;
+    .col-3 {
+      width: 100%;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+  }
+}

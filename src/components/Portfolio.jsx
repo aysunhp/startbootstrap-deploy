@@ -1,19 +1,19 @@
 import React from "react";
-
+import "../../src/grid.css";
 const Portfolio = () => {
   return (
     <div className="portfolio-section">
-      <div className="portfolio-container">
+      <div className="portfolio-container container">
         <h5>PORTFOLIO</h5>
         <h1>Recent Projects</h1>
-        <div className="projects">
-          <div className="col-6" id="project1">
+        <div className="projects row">
+          <div className="col-lg-6 col-md-12 col-sm-12 box" id="project1">
             <div className="content">
               <h6>Stationary</h6>
               <p>A yellow pencil with envelopes on a clean, blue backdrop!</p>
             </div>
           </div>
-          <div className="col-6" id="project2">
+          <div className="col-lg-6 col-md-12 col-sm-12 box" id="project2">
             <div className="content">
               <h6>Ice Cream</h6>
               <p>
@@ -22,7 +22,7 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-          <div className="col-6" id="project3">
+          <div className="col-lg-6 col-md-12 col-sm-12 box" id="project3">
             <div className="content">
               <h6>Strawberries</h6>
               <p>
@@ -31,7 +31,7 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-          <div className="col-6" id="project4">
+          <div className="col-lg-6 col-md-12 col-sm-12 box" id="project4">
             <div className="content">
               <h6>Workspace</h6>
               <p>

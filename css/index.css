@@ -176,13 +176,12 @@
   align-items: center;
 }
 * .portfolio-section .portfolio-container {
+  width: 80%;
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
-  padding: 0px 48px;
-  margin: 0px 290px;
 }
 * .portfolio-section .portfolio-container h5 {
   color: #ecb807;
@@ -192,33 +191,31 @@
   margin-bottom: 48px;
   font-size: 48px;
 }
-* .portfolio-section .portfolio-container .projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0px;
-}
-* .portfolio-section .portfolio-container .projects .col-6 {
-  width: 612px;
-  height: 410px;
-  margin: 0px;
-}
 * .portfolio-section .portfolio-container .projects #project1 {
   background-image: url("./assets/images/portfolio-1.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 * .portfolio-section .portfolio-container .projects #project2 {
   background-image: url("./assets/images/portfolio-2.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 * .portfolio-section .portfolio-container .projects #project3 {
   background-image: url("./assets/images/portfolio-3.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 * .portfolio-section .portfolio-container .projects #project4 {
   background-image: url("./assets/images/bg-callout.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+* .portfolio-section .portfolio-container .projects .box {
+  transition: transform 0.3s ease-in-out;
+}
+* .portfolio-section .portfolio-container .projects .box:hover {
+  transform: scale(0.9);
 }
 * .portfolio-section .portfolio-container .projects .content {
   margin: 250px 80px 80px 80px;
@@ -367,6 +364,16 @@
 @media screen and (max-width: 767px) {
   .services-section .services-container .icons-container {
     width: 70%;
+  }
+  .services-section .services-container .icons-container .col-3 {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .services-section .services-container .icons-container {
+    width: 60%;
   }
   .services-section .services-container .icons-container .col-3 {
     width: 100%;
