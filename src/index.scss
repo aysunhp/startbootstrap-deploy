@@ -200,10 +200,12 @@
       h5 {
         color: #ecb807;
         font-size: 16px;
+        text-align: center;
       }
       h1 {
         margin-bottom: 48px;
         font-size: 48px;
+        text-align: center;
       }
       .projects {
         #project1 {
@@ -420,5 +422,8 @@
   }
   .hero-section .hero-container h3 {
     font-size: 1.5em;
+  }
+  .callout-section .callout-container h1 {
+    font-size: 3.5em;
   }
 }

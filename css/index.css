@@ -188,10 +188,12 @@
 * .portfolio-section .portfolio-container h5 {
   color: #ecb807;
   font-size: 16px;
+  text-align: center;
 }
 * .portfolio-section .portfolio-container h1 {
   margin-bottom: 48px;
   font-size: 48px;
+  text-align: center;
 }
 * .portfolio-section .portfolio-container .projects #project1 {
   background-image: url("./assets/images/portfolio-1.jpg");
@@ -387,5 +389,8 @@
   }
   .hero-section .hero-container h3 {
     font-size: 1.5em;
+  }
+  .callout-section .callout-container h1 {
+    font-size: 3.5em;
   }
 }/*# sourceMappingURL=index.css.map */
