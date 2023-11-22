@@ -8,8 +8,8 @@ const Services = () => {
       <div className="services-container">
         <h4>SERVICES</h4>
         <h1>What We Offer</h1>
-        <ul>
-          <li>
+        <div className="icons-container">
+          <div className="col-3">
             <div className="icon-wrapper">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +25,8 @@ const Services = () => {
             </div>
             <h2>Responsive</h2>
             <p>Looks great on any screen size!</p>
-          </li>
-          <li>
+          </div>
+          <div className="col-3">
             <div className="icon-wrapper">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,8 +42,8 @@ const Services = () => {
             </div>
             <h2>Redesigned</h2>
             <p>Freshly redesigned for Bootstrap 5.</p>
-          </li>
-          <li>
+          </div>
+          <div className="col-3">
             <div className="icon-wrapper">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,8 +59,8 @@ const Services = () => {
             </div>
             <h2>Favorited</h2>
             <p>Millions of users Start Bootstrap!</p>
-          </li>
-          <li>
+          </div>
+          <div className="col-3">
             <div className="icon-wrapper">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,8 +81,8 @@ const Services = () => {
             </div>
             <h2>Question</h2>
             <p>I mustache you a question...</p>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
